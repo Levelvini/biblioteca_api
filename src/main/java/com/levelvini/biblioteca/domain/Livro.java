@@ -18,6 +18,7 @@ public class Livro {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
+    private int date;
 
     @ManyToOne
     @JoinColumn(name = "category_id")
