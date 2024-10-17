@@ -1,6 +1,6 @@
 package com.levelvini.biblioteca.controller;
 
-import com.levelvini.biblioteca.service.CateroriaService;
+import com.levelvini.biblioteca.service.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CategoriaController {
 
     @Autowired
-    CateroriaService cateroriaService;
+    CategoriaService cateroriaService;
 }
