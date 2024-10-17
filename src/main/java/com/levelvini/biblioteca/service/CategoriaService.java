@@ -19,7 +19,7 @@ public class CategoriaService {
     }
 
     public Categoria buscarPorId(Long id){
-        return categoriaRepository.findById(id).orElseThrow(()->new ResourseNotFoundException("Livro não encontrado!!"));
+        return categoriaRepository.findById(id).orElseThrow(()->new ResourseNotFoundException("categoria não encontrada!!"));
     }
     public Categoria save(Categoria categoria){
         return categoriaRepository.save(categoria);
