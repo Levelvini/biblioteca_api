@@ -14,7 +14,7 @@ public class Livro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer ID;
+    public Long ID;
     public String name;
 
     @ManyToOne

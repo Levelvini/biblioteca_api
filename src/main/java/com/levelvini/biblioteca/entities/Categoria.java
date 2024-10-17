@@ -16,7 +16,7 @@ public class Categoria {
 
     @jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer Id;
+    private Long Id;
     private String name;
 
     @Setter(AccessLevel.NONE)
