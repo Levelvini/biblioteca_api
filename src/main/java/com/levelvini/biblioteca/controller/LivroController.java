@@ -20,7 +20,7 @@ public class LivroController {
     @GetMapping
     private List<Livro> takeAllBooks(){
         List<Livro> list = livroService.buscartodos();
-        if (list.get(0) == null){
+        if (list == null || list.isEmpty()){
             throw new ResourseNotFoundException("Lista de livros vazia");
         }
         return list;
