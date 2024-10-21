@@ -30,6 +30,7 @@ public class AutorController {
     return autorService.buscarPorId(id);
     }
 
+    @PostMapping
     public ResponseEntity<Autor> save(@RequestBody Autor autor){
         Autor novoAutor = autorService.save(autor);
         return ResponseEntity.status(HttpStatus.CREATED).body(autor);
@@ -41,6 +42,7 @@ public class AutorController {
         return ResponseEntity.ok(autor);
     }
 
+    @DeleteMapping
     public ResponseEntity<Void> delete(@PathVariable Long id){
         autorService.deletar(id);
         return ResponseEntity.noContent().build();
